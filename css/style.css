@@ -2622,7 +2622,9 @@ h6 {
       .tabs_inner .tab-content .tab-pane .list li .media .d-flex p {
         color: rgba(255, 255, 255, 0.75);
         margin-bottom: 0px;
-        padding-top: 20px; }
+        padding-top: 30px;
+        padding-right: 150px;
+   }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 {
       color: #fff;
       font-size: 21px;

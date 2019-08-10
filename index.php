@@ -1,68 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Adem Kesim</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-
-	<!--================Header Menu Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container box_1620">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-							<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-								</ul>
-							</li> 
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li> 
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-						</ul>
-					</div> 
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================Header Menu Area =================-->
-
+<?php include 'header.php'; ?>
 	<!--================Home Banner Area =================-->
 	<section class="home_banner_area">
 		<div class="container box_1620">
@@ -105,7 +41,7 @@
 				<div class="col-lg-6">
 					<div class="welcome_text">
 						<h4>About Myself</h4>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+						<p>I am a Computer Engineering student at Selçuk University. I work with web development. I worked on image processing. I want to combine Artificial Intelligence and Big Data technologies with web technologies.</p>
 						<div class="row"><!--
 							<div class="col-md-4">
 								<div class="wel_item">
@@ -275,70 +211,26 @@
 					<div class="feature_item">
 						<i class="flaticon-city"></i>
 						<h4>Architecture</h4>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
+						<p>I am trying to do my best using the most appropriate architecture for the project.</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="feature_item">
 						<i class="flaticon-skyline"></i>
-						<h4>Interior Design</h4>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
+						<h4>Backend Developer</h4>
+						<p>I love developing backend more than frontend. But I choose my designs carefully and change the parts I don't like. I know the customer will look at the design, I act accordingly.</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="feature_item">
 						<i class="flaticon-sketch"></i>
-						<h4>Concept Design</h4>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
+						<h4>Time Concept</h4>
+						<p>I know time is very valuable. I pay attention to plan my work and follow my plans. I am trying to do my best to deliver the tasks assigned to me on time.
+						</p><p>Happiness depends on success and success depends on evaluation of time. (Seneca)</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--================End Feature Area =================-->
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area p_120">
-		<div class="container">
-			<div class="row footer_inner">
-					<div class="col-lg-2">
-						<aside class="f_widget social_widget">
-							<div class="f_title">
-								<h3>Follow Me</h3>
-							</div>
-							<ul class="list">
-								<li><a href="https://www.facebook.com/adem.kesim.547"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://twitter.com/ademkesimm"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.instagram.com/adem.kesim/"><i class="fa fa-instagram"></i></a></li>
-							</ul>
-						</aside>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!--================End Footer Area =================-->
-
-
-
-
-
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/stellar.js"></script>
-		<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-		<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-		<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-		<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-		<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-		<script src="vendors/counter-up/jquery.counterup.min.js"></script>
-		<script src="js/mail-script.js"></script>
-		<script src="js/theme.js"></script>
-	</body>
-	</html>
+<?php include 'footer.php'; ?>

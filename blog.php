@@ -2,14 +2,14 @@
 <!--================Home Banner Area =================-->
 <section class="home_banner_area blog_banner">
     <div class="banner_inner d-flex align-items-center">
-     <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-     <div class="container">
-         <div class="blog_b_text text-center">
-          <h2>Dude You’re Getting <br /> a Telescope</h2>
-          <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
+       <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+       <div class="container">
+           <div class="blog_b_text text-center">
+              <h2>Dude You’re Getting <br /> a Telescope</h2>
+              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
+          </div>
       </div>
   </div>
-</div>
 </section>
 <!--================End Home Banner Area =================-->
 
@@ -67,8 +67,8 @@
                     <div class="col-lg-8">
                         <div class="blog_left_sidebar">
                             <article class="row blog_item">
-                               <div class="col-md-3">
-                                   <div class="blog_info text-right">
+                             <div class="col-md-3">
+                                 <div class="blog_info text-right">
                                     <ul class="blog_meta list">
                                         <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
                                         <li><a href="#">Python<i class="lnr lnr-code"></i></a></li>
@@ -165,43 +165,6 @@
                                 <li>
                                     <a href="#" class="d-flex justify-content-between">
                                         <p>Technology</p>
-                                        <p>37</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Lifestyle</p>
-                                        <p>24</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Fashion</p>
-                                        <p>59</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Art</p>
-                                        <p>29</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Food</p>
-                                        <p>15</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Architecture</p>
-                                        <p>09</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Adventure</p>
-                                        <p>44</p>
                                     </a>
                                 </li>															
                             </ul>
@@ -210,8 +173,7 @@
                         <aside class="single-sidebar-widget newsletter_widget">
                             <h4 class="widget_title">Newsletter</h4>
                             <p>
-                                Here, I focus on a range of items and features that we use in life without
-                                giving them a second thought.
+                                Don't you want to be the first to be informed about current blogs?
                             </p>
                             <div class="form-group d-flex flex-row">
                                 <div class="input-group">

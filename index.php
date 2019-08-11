@@ -71,7 +71,7 @@
 					<div class="tools_expert">
 						<div class="skill_main">
 							<div class="skill_item">
-								<h4>HTML/CSS <span class="counter">85</span>%</h4>
+								<h4>HTML/CSS <span>100</span>%</h4>
 								<div class="progress_br">
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
@@ -79,7 +79,7 @@
 								</div>
 							</div>
 							<div class="skill_item">
-								<h4>Python <span class="counter">60</span>%</h4>
+								<h4>Python <span>60</span>%</h4>
 								<div class="progress_br">
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
@@ -87,7 +87,7 @@
 								</div>
 							</div>
 							<div class="skill_item">
-								<h4>PHP <span class="counter">70</span>%</h4>
+								<h4>PHP <span>70</span>%</h4>
 								<div class="progress_br">
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -95,7 +95,7 @@
 								</div>
 							</div>
 							<div class="skill_item">
-								<h4>Sublime <span class="counter">90</span>%</h4>
+								<h4>Sublime <span>90</span>%</h4>
 								<div class="progress_br">
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -103,7 +103,7 @@
 								</div>
 							</div>
 							<div class="skill_item">
-								<h4>Pycharm <span class="counter">90</span>%</h4>
+								<h4>Pycharm <span>90</span>%</h4>
 								<div class="progress_br">
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -111,7 +111,7 @@
 								</div>
 							</div>
 							<div class="skill_item">
-								<h4>C/C++/C# <span class="counter">50</span>%</h4>
+								<h4>C/C++/C# <span>50</span>%</h4>
 								<div class="progress_br">
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>

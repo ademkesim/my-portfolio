@@ -330,7 +330,7 @@ button:focus {
         align-self: center; }
 
 .blog_banner {
-  min-height: 780px;
+  min-height: 450px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -340,12 +340,12 @@ button:focus {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 780px;
+    min-height: 450px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
       background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
       opacity: .5;
-      height: 125%;
+      height: 100%;
       position: absolute;
       left: 0px;
       top: 0px;

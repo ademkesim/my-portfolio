@@ -22,11 +22,10 @@
 <!--================Contact Area =================-->
 <section class="contact_area p_120">
     <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.2102077867967!2d29.18297635116133!3d41.04253197919569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cace8766c64f77%3A0x5bc458c2609b9f76!2zTWVya2V6LCBaw7xtcmUgU2suLCAzNDc4MiDDh2VrbWVrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1565438519068!5m2!1str!2str" width="1140" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="row">
             <div class="col-lg-3">
                 <div class="contact_info">
-                    <br>
+                    <br><br><br>
                     <div class="info_item">
                         <i class="lnr lnr-home"></i>
                         <h6>Çekmeköy, İstanbul</h6>
@@ -40,7 +39,8 @@
             </div>
 
             <div class="col-lg-9">
-                <br>
+                
+                <h2 class="text-center">lorem ipsum?</h2><br>
                 <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form-group">

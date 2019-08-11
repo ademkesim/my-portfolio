@@ -384,7 +384,7 @@ button:focus {
   margin-bottom: 120px; }
   .banner_area .box_1620 {
     background: #fff;
-    min-height: 360px;
+    min-height: 200px;
     border-radius: 12px;
     position: relative;
     bottom: -120px;
@@ -393,7 +393,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 360px;
+    min-height: 200px;
     z-index: 1; }
     .banner_area .banner_inner .banner_content h2 {
       color: #222222;

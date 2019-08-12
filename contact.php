@@ -2,20 +2,16 @@
 <!--================Header Menu Area =================-->
 
 <!--================Home Banner Area =================-->
-<section class="banner_area">
-    <div class="box_1620">
-        <div class="banner_inner d-flex align-items-center">
-           <div class="container">
-              <div class="banner_content text-center">
-                 <h2>Contact Us</h2>
-                 <div class="page_link">
-                    <a href="index.html">Home</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="home_banner_area contact_banner">
+    <div class="banner_inner d-flex align-items-center">
+       <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+       <div class="container">
+           <div class="blog_b_text text-center">
+              <h2>Dude You’re Getting <br /> a Telescope</h2>
+              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
+          </div>
+      </div>
+  </div>
 </section>
 <!--================End Home Banner Area =================-->
 
@@ -40,7 +36,7 @@
 
             <div class="col-lg-9">
                 
-                <h2 class="text-center">lorem ipsum?</h2><br>
+                <h2 class="text-center">REACH ME</h2><br>
                 <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form-group">

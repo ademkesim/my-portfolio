@@ -79,8 +79,8 @@ button:focus {
   padding-right: 0px; }
 
 .p_120 {
-  padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .p_100 {
   padding-top: 100px;
@@ -366,6 +366,46 @@ button:focus {
         font-size: 16px;
         margin-bottom: 35px; }
       .blog_banner .banner_inner .blog_b_text .white_bg_btn {
+        line-height: 42px;
+        padding: 0px 45px;
+        border-radius: 5px; }
+.contact_banner {
+  min-height: 450px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 0px; }
+  .contact_banner .banner_inner {
+    background: #04091e;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 450px;
+    z-index: 1; }
+    .contact_banner .banner_inner .overlay {
+      background: url(../img/banner/contact.jpg) no-repeat scroll center center;
+      opacity: .5;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      z-index: -1; }
+    .contact_banner .banner_inner .blog_b_text {
+      max-width: 700px;
+      margin: auto;
+      color: #fff; }
+      .contact_banner .banner_inner .blog_b_text h2 {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "Heebo", sans-serif;
+        line-height: 66px;
+        margin-bottom: 15px;
+        text-transform: uppercase; }
+      .contact_banner .banner_inner .blog_b_text p {
+        font-size: 16px;
+        margin-bottom: 35px; }
+      .contact_banner .banner_inner .blog_b_text .white_bg_btn {
         line-height: 42px;
         padding: 0px 45px;
         border-radius: 5px; }
@@ -2559,7 +2599,7 @@ h6 {
   display: block;
   text-align: center;
   border: none;
-  margin-bottom: 120px; }
+  margin-bottom: 60px; }
   .tabs_inner .nav.nav-tabs li {
     display: inline-block;
     margin-right: 8px; }
@@ -2618,21 +2658,24 @@ h6 {
     .tabs_inner .tab-content .tab-pane .list li:last-child {
       margin-bottom: 0px; }
     .tabs_inner .tab-content .tab-pane .list li .media .d-flex {
-      padding-right: 100px; }
+      padding-right: 60px; }
       .tabs_inner .tab-content .tab-pane .list li .media .d-flex p {
         color: rgba(255, 255, 255, 0.75);
         margin-bottom: 0px;
         padding-top: 30px;
-        padding-right: 150px;
+        padding-right: 70px;
    }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 {
       color: #fff;
       font-size: 21px;
       text-transform: uppercase;
-      margin-bottom: 20px; }
+      margin-bottom: 15px;
+      padding-top: 30px; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body p {
       color: rgba(255, 255, 255, 0.75);
-      margin-bottom: 0px; }
+      margin-bottom: 5px;
+
+       }
 
 /* End My Tabs Area css
 ============================================================================================ */
@@ -2659,6 +2702,8 @@ h6 {
 .feature_item {
   padding: 50px 35px;
   border-radius: 10px;
+  width: 360px;
+  height: 440px;
   transition: all 300ms linear 0s;
   background: #fff;
   margin-bottom: 30px; }

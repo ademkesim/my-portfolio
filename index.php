@@ -157,7 +157,7 @@
 								<span></span>
 								<div class="media">
 									<div class="d-flex">
-										<p>December 2018 to June 2019</p>
+										<p>December 2018 to June</p>
 									</div>
 									<div class="media-body">
 										<h4>Ketenci Bilişim</h4>

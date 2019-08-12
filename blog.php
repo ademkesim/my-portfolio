@@ -79,9 +79,9 @@
                                 <div class="blog_post">
                                     <img src="img/blog/main-blog/m-blog-1.jpg" alt="">
                                     <div class="blog_details">
-                                        <a href="single-blog.html"><h2>Astronomy Binoculars A Great Alternative</h2></a>
+                                        <a href="single-blog.php"><h2>Astronomy Binoculars A Great Alternative</h2></a>
                                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="single-blog.php" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </article>

@@ -2,14 +2,14 @@
 <!--================Home Banner Area =================-->
 <section class="home_banner_area blog_banner">
     <div class="banner_inner d-flex align-items-center">
-       <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-       <div class="container">
-           <div class="blog_b_text text-center">
-              <h2>Dude You’re Getting <br /> a Telescope</h2>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
-          </div>
+     <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+     <div class="container">
+         <div class="blog_b_text text-center">
+          <h2>Dude You’re Getting <br /> a Telescope</h2>
+          <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
       </div>
   </div>
+</div>
 </section>
 <!--================End Home Banner Area =================-->
 
@@ -67,8 +67,8 @@
                     <div class="col-lg-8">
                         <div class="blog_left_sidebar">
                             <article class="row blog_item">
-                             <div class="col-md-3">
-                                 <div class="blog_info text-right">
+                               <div class="col-md-3">
+                                   <div class="blog_info text-right">
                                     <ul class="blog_meta list">
                                         <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
                                         <li><a href="#">Python<i class="lnr lnr-code"></i></a></li>
@@ -85,7 +85,7 @@
                                     </div>
                                 </div>
                             </article>
-
+                            
                             <nav class="blog-pagination justify-content-center d-flex">
                               <ul class="pagination">
                                   <li class="page-item">

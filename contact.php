@@ -7,8 +7,7 @@
        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
        <div class="container">
            <div class="blog_b_text text-center">
-              <h2>Dude You’re Getting <br /> a Telescope</h2>
-              <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
+              <h2>Contact Me</h2>
           </div>
       </div>
   </div>

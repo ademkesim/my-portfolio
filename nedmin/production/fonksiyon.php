@@ -5,7 +5,7 @@ session_start();
 
 function islemkontrol () {
 
-    if (empty($_SESSION['userkullanici_mail'])) {
+    if (empty($_SESSION['admin_mail'])) {
         
         Header("Location:404.php");
         exit;

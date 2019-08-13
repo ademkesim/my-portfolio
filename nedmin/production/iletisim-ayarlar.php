@@ -55,30 +55,6 @@ include 'header.php';
             <!-- / => en kök dizine çık ... ../ bir üst dizine çık -->
             <form action="../netting/islem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
-              <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefon Numarası <span class="required">*</span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="text" id="first-name" name="ayar_tel" value="<?php echo $ayarcek['ayar_tel'] ?>" required="required" class="form-control col-md-7 col-xs-12">
-                </div>
-              </div>
-
-               <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefon Numarası (GSM) <span class="required">*</span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="text" id="first-name" name="ayar_gsm" value="<?php echo $ayarcek['ayar_gsm'] ?>" required="required" class="form-control col-md-7 col-xs-12">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Faks Numarası <span class="required">*</span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="text" id="first-name" name="ayar_faks" value="<?php echo $ayarcek['ayar_faks'] ?>" required="required" class="form-control col-md-7 col-xs-12">
-                </div>
-              </div>
-
                 <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mail Adresi<span class="required">*</span>
                 </label>
@@ -107,18 +83,9 @@ include 'header.php';
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Adres <span class="required">*</span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="text" id="first-name" name="ayar_adres" value="<?php echo $ayarcek['ayar_adres'] ?>" required="required" class="form-control col-md-7 col-xs-12">
+                  <input type="text" id="first-name" name="ayar_dogum" value="<?php echo $ayarcek['ayar_dogum'] ?>" required="required" class="form-control col-md-7 col-xs-12">
                 </div>
               </div>
-
-              <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mesai <span class="required">*</span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="text" id="first-name" name="ayar_mesai" value="<?php echo $ayarcek['ayar_mesai'] ?>" required="required" class="form-control col-md-7 col-xs-12">
-                </div>
-              </div>
-
 
               <div class="ln_solid"></div>
               <div class="form-group">

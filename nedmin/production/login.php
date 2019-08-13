@@ -38,10 +38,10 @@
             <h1>Yönetim Paneli </h1>
             
             <div>
-              <input type="text" name="kullanici_mail" class="form-control" placeholder="Kullanıcı Adınız (Mail)" required="" />
+              <input type="text" name="admin_mail" class="form-control" placeholder="Kullanıcı Adınız (Mail)" required="" />
             </div>
             <div>
-              <input type="password" name="kullanici_password" class="form-control" placeholder="Şifreniz" required="" />
+              <input type="password" name="admin_password" class="form-control" placeholder="Şifreniz" required="" />
             </div>
             <div>
             <button style="width: 100%; background-color: #73879C; color:white;" type="submit" name="admingiris" class="btn btn-default"> Giriş Yap</button>

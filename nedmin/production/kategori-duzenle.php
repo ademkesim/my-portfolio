@@ -72,9 +72,6 @@ $kategoricek=$kategorisor->fetch(PDO::FETCH_ASSOC);
                 </div>
               </div>
 
-              
-          
-
             <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kategori Sıra <span class="required">*</span>
                 </label>
@@ -83,52 +80,21 @@ $kategoricek=$kategorisor->fetch(PDO::FETCH_ASSOC);
                 </div>
               </div>
 
-               <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Öne Çıkar<span class="required">*</span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                 <select id="heard" class="form-control" name="kategori_onecikar" required>
-
-
-
-                  <option value="1" <?php echo $kategoricek['kategori_onecikar'] == '1' ? 'selected=""' : ''; ?>>Evet</option>
-
-
-
-                  <option value="0" <?php if ($kategoricek['kategori_onecikar']== '0') { echo 'selected=""'; } ?>>Hayır</option>
-                 
-
-                 </select>
-               </div>
-             </div>
-
-
-
-
-
             <div class="form-group">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kategori Durum<span class="required">*</span>
               </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
                <select id="heard" class="form-control" name="kategori_durum" required>
 
-
-
                   <option value="1" <?php echo $kategoricek['kategori_durum'] == '1' ? 'selected=""' : ''; ?>>Aktif</option>
-
-
 
                   <option value="0" <?php if ($kategoricek['kategori_durum']==0) { echo 'selected=""'; } ?>>Pasif</option>
                  
-
-
                  </select>
                </div>
              </div>
 
-
              <input type="hidden" name="kategori_id" value="<?php echo $kategoricek['kategori_id'] ?>"> 
-
 
              <div class="ln_solid"></div>
              <div class="form-group">
@@ -139,21 +105,13 @@ $kategoricek=$kategorisor->fetch(PDO::FETCH_ASSOC);
 
           </form>
 
-
-
         </div>
       </div>
     </div>
   </div>
-
-
-
   <hr>
   <hr>
   <hr>
-
-
-
 </div>
 </div>
 <!-- /page content -->

@@ -1,10 +1,9 @@
-
 <?php
 ob_start();
 session_start();
 
 include 'baglan.php';
-include '../production/fonksiyon.php';
+include 'fonksiyon.php';
 
 
 if (isset($_POST['admingiris'])) {
@@ -264,7 +263,7 @@ if (isset($_POST['blogekle'])) {
 		dil=:dil,
 		blog_onecikar=:blog_onecikar,
 		blog_durum=:blog_durum,
-		blog_seourl=:seourl		
+		blog_seourl=:seourl
 		");
 	$insert=$kaydet->execute(array(
 		'kategori_id' => $_POST['kategori_id'],
@@ -274,7 +273,6 @@ if (isset($_POST['blogekle'])) {
 		'blog_onecikar' => $_POST['blog_onecikar'],
 		'blog_durum' => $_POST['blog_durum'],
 		'seourl' => $blog_seourl
-
 	));
 
 	if ($insert) {
@@ -608,7 +606,7 @@ if (isset($_POST['kartduzenle'])) {
 		isim=:isim,
 		meslek=:meslek,
 		tanitim=:tanitim		
-		WHERE kart_id=0");
+		WHERE kart_id=1");
 	$update=$kaydet->execute(array(
 		'isim' => $_POST['isim'],
 		'meslek' => $_POST['meslek'],

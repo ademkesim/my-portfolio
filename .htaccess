@@ -1,0 +1,3 @@
+RewriteEngine on
+
+RewriteRule ^kategoriler-([0-9]+)$  kategori.php?kategori_id=$2 [L,QSA]

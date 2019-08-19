@@ -1,47 +1,48 @@
 <?php include 'header.php'; ?>
-	<!--================Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="container box_1620">
-			<div class="banner_inner d-flex align-items-center">
-				<div class="banner_content">
-					<div class="media">
-						<div class="d-flex">
-							<img src="img/personal.jpg" alt="">
-						</div>
-						<div class="media-body">
-							<div class="personal_text">
-								<h6>Hello Everybody, i am</h6>
-								<h3>Adem Kesim</h3>
-								<h4>Junior Backend Developer</h4>
-								<p>Hello! I'm Adem, an Web backend Developer from Istanbul.</p>
-								<ul class="list basic_info">
-									<li><a href="#"><i class="lnr lnr-calendar-full"></i> 17st July, 2000</a></li>
-									<li><a href="#"><i class="lnr lnr-phone-handset"></i> +90 (506) 140 61 37</a></li>
-									<li><a href="#"><i class="lnr lnr-envelope"></i> info@ademkesim.com</a></li>
-									<li><a href="#"><i class="lnr lnr-home"></i> İstanbul/Turkey</a></li>
-								</ul>
-								<ul class="list personal_social">
-									<li><a href="https://www.instagram.com/adem.kesim/"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="https://twitter.com/ademkesimm"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://tr.linkedin.com/in/adem-veli-kesim-a2070a177"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
+<!--================Home Banner Area =================-->
+<section class="home_banner_area">
+	<div class="container box_1620">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="banner_content">
+				<div class="media">
+					<div class="d-flex">
+						<img src="img/personal.jpg" alt="">
+					</div>
+					<div class="media-body">
+						<div class="personal_text">
+							<h6>Hello Everybody, i am</h6>
+							<h3><?php echo $kartcek['isim'] ?></h3>
+							<h4><?php echo $kartcek['meslek'] ?></h4>
+							<p><?php echo $kartcek['tanitim'] ?></p>
+							<ul class="list basic_info">
+								<li><a href="#"><i class="lnr lnr-calendar-full"></i> <?php echo $ayarcek['ayar_dogum'] ?></a></li>
+								<li><a href="#"><i class="lnr lnr-envelope"></i> <?php echo $ayarcek['ayar_mail'] ?></a></li>
+								<li><a href="#"><i class="lnr lnr-home"></i> <?php echo $ayarcek['ayar_ilce']. '/' .$ayarcek['ayar_il'] ?></a></li>
+							</ul>
+							<ul class="list personal_social">
+								<li><a href="<?php echo $ayarcek['ayar_facebook'] ?>"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="<?php echo $ayarcek['ayar_twitter'] ?>"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="<?php echo $ayarcek['ayar_linkedin'] ?>"><i class="fa fa-linkedin"></i></a></li>
+								<a href="#" class="btn btn-dark">Go to Blog</a>
+							</ul>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================End Home Banner Area =================-->
+	</div>
+</section>
+<!--================End Home Banner Area =================-->
 
-	<!--================Welcome Area =================-->
-	<section class="welcome_area p_120">
-		<div class="container">
-			<div class="row welcome_inner">
-				<div class="col-lg-6">
-					<div class="welcome_text">
-						<h4>About Myself</h4>
-						<p>I am a Computer Engineering student at Selçuk University. I work with web development. I worked on image processing. I want to combine Artificial Intelligence and Big Data technologies with web technologies.</p>
+<!--================Welcome Area =================-->
+<section class="welcome_area p_120">
+	<div class="container">
+		<div class="row welcome_inner">
+			<div class="col-lg-6">
+				<div class="welcome_text">
+					<h4>About Myself</h4>
+					<p><?php echo $tanitimcek['yazi'] ?></p>
 						<div class="row"><!--
 							<div class="col-md-4">
 								<div class="wel_item">
@@ -53,7 +54,7 @@
 							<div class="col-md-4">
 								<div class="wel_item">
 									<i class="lnr lnr-book"></i>
-									<h4>24</h4>
+									<h4><?php echo $tanitimcek['proje'] ?></h4>
 									<p>Total Projects</p>
 								</div>
 							</div><!--
@@ -70,54 +71,20 @@
 				<div class="col-lg-6">
 					<div class="tools_expert">
 						<div class="skill_main">
-							<div class="skill_item">
-								<h4>HTML/CSS <span>85</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							<?php 
+
+							$say=0;
+
+							while($yetkinlikcek=$yetkinliksor->fetch(PDO::FETCH_ASSOC)) { $say++?>
+								<div class="skill_item">
+									<h4><?php echo $yetkinlikcek['isim'] ?> <span><?php echo $yetkinlikcek['derece'] ?></span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="<?php echo $yetkinlikcek['derece'] ?>" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Python <span>60</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>PHP <span>70</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Sublime <span>90</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Pycharm <span>90</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>C/C++/C# <span>50</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
+							<?php  } ?>
 						</div>
 					</div>
 				</div>
@@ -141,57 +108,46 @@
 				<div class="tab-content" id="myTabContent">
 					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 						<ul class="list">
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>July 2019 to present</p>
+							<?php 
+
+							$say=0;
+
+							while($tecrubecek=$tecrubesor->fetch(PDO::FETCH_ASSOC)) { $say++?>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p><?php echo $tecrubecek['tecrube_baslangic'].' to '. $tecrubecek['tecrube_bitis'] ?></p>
+										</div>
+										<div class="media-body">
+											<h4><?php echo $tecrubecek['firma_isim'] ?></h4>
+											<p><?php echo $tecrubecek['firma_gorev'] ?></p>
+										</div>
 									</div>
-									<div class="media-body">
-										<h4>Kant AŞ.</h4>
-										<p>Intern Web Backend Developer <br />Beşiktaş, İstanbul</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>December 2018 to June</p>
-									</div>
-									<div class="media-body">
-										<h4>Ketenci Bilişim</h4>
-										<p>Intern Web Developer and Software Support <br />Selçuklu, Konya</p>
-									</div>
-								</div>
-							</li>
+								</li>
+							<?php } ?>
 						</ul>
 					</div>
 					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 						<ul class="list">
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>2018 to present</p>
+							<?php 
+
+							$say=0;
+
+							while($egitimcek=$egitimsor->fetch(PDO::FETCH_ASSOC)) { $say++?>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p><?php echo $egitimcek['egitim_baslangic'].' to '. $egitimcek['egitim_bitis'] ?></p>
+										</div>
+										<div class="media-body">
+											<h4><?php echo $egitimcek['okul_isim'] ?></h4>
+											<p><?php echo $egitimcek['alan_isim'] ?></p>
+										</div>
 									</div>
-									<div class="media-body">
-										<h4>Selçuk University</h4>
-										<p>Computer Engineering</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>2014 to 2018</p>
-									</div>
-									<div class="media-body">
-										<h4>Fenerbahçe Anatolian High School</h4>
-									</div>
-								</div>
-							</li>
+								</li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>
@@ -207,30 +163,21 @@
 				<h2>What ı am doing?</h2>
 			</div>
 			<div class="feature_inner row">
-				<div class="col-lg-4 col-md-6">
-					<div class="feature_item">
-						<i class="flaticon-city"></i>
-						<h4>Architecture</h4>
-						<p>I am trying to do my best using the most appropriate architecture for the project.</p>
+				<?php 
+
+				$say=0;
+
+				while($featurecek=$featuresor->fetch(PDO::FETCH_ASSOC)) { $say++?>
+					<div class="col-lg-4 col-md-6">
+						<div class="feature_item">
+							<i class="<?php echo $featurecek['class'] ?>"></i>
+							<h4><?php echo $featurecek['isim'] ?></h4>
+							<p><?php echo $featurecek['icerik'] ?></p>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="feature_item">
-						<i class="flaticon-skyline"></i>
-						<h4>Backend Developer</h4>
-						<p>I love developing backend more than frontend. But I choose my designs carefully and change the parts I don't like. I know the customer will look at the design, I act accordingly.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="feature_item">
-						<i class="flaticon-sketch"></i>
-						<h4>Time Concept</h4>
-						<p>I know time is very valuable. I pay attention to plan my work and follow my plans. I am trying to do my best to deliver the tasks assigned to me on time.
-						</p><p>Happiness depends on success and success depends on evaluation of time. (Seneca)</p>
-					</div>
-				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</section>
 	<!--================End Feature Area =================-->
-<?php include 'footer.php'; ?>
+	<?php include 'footer.php'; ?>

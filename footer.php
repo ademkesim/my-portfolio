@@ -8,9 +8,9 @@
 							<h3>Follow Me</h3>
 						</div>
 						<ul class="list">
-							<li><a href="https://www.facebook.com/adem.kesim.547"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://twitter.com/ademkesimm"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.instagram.com/adem.kesim/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="<?php echo $ayarcek['ayar_facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="<?php echo $ayarcek['ayar_twitter'] ?>"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="<?php echo $ayarcek['ayar_instagram'] ?>"><i class="fa fa-instagram"></i></a></li>
 						</ul>
 					</aside>
 				</div>

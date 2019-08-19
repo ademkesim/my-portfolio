@@ -5,7 +5,7 @@ include 'header.php';
 //Belirli veriyi seçme işlemi
 $kartsor=$db->prepare("SELECT * FROM kart where kart_id=:id");
 $kartsor->execute(array(
-	'id' => 0
+	'id' => 1
 ));
 
 $kartcek=$kartsor->fetch(PDO::FETCH_ASSOC);

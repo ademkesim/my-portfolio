@@ -1,4 +1,23 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+$blogsor=$db->prepare("SELECT * FROM blog where blog_id=:blog_id");
+$blogsor->execute(array(
+  'blog_id' => $_GET['blog_id']
+));
+$blogcek=$blogsor->fetch(PDO::FETCH_ASSOC);
+
+$sonrakiblogsor=$db->prepare("SELECT * FROM blog where blog_id=:blog_id");
+$sonrakiblogsor->execute(array(
+   'blog_id' => $_GET['blog_id']+1
+));
+$sonrakiblogcek=$sonrakiblogsor->fetch(PDO::FETCH_ASSOC);
+
+$oncekiblogsor=$db->prepare("SELECT * FROM blog where blog_id=:blog_id");
+$oncekiblogsor->execute(array(
+  'blog_id' => $_GET['blog_id']-1
+));
+$oncekiblogcek=$oncekiblogsor->fetch(PDO::FETCH_ASSOC);
+
+?>
 <!--================Home Banner Area =================-->
 <section class="home_banner_area blog_banner">
     <div class="banner_inner d-flex align-items-center">
@@ -24,191 +43,166 @@
                             <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
                         </div>									
                     </div>
-                    <div class="col-lg-3  col-md-3">
+                    <div class="col-lg-12  col-md-12">
                         <div class="blog_info text-right">
                             <ul class="blog_meta list">
                                 <br>
-                                <li><a href="#">12 Dec, 2017<i class="lnr lnr-calendar-full"></i></a></li>
-                                <li><a href="#">Python<i class="lnr lnr-code"></i></a></li>
+                                <li><a><?php echo date("d-m-Y",strtotime($blogcek['tarih'])); ?><i class="lnr lnr-calendar-full"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 blog_details">
-                        <h2>Astronomy Binoculars A Great Alternative</h2>
+                    <div class="col-lg-12 col-md-12 blog_details">
+                        <h2><?php echo $blogcek['baslik'] ?></h2>
                         <p class="excert">
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                            <?php echo $blogcek['icerik'] ?>
                         </p>
-                        <p>
-                            Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
-                        </p>
-                        <p>
-                            Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
-                        </p>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="quotes">
-                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.										
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
-                            </div>	
-                            <div class="col-lg-12 mt-25">
-                                <p>
-                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.
-                                </p>
-                                <p>
-                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.
-                                </p>											
-                            </div>									
-                        </div>
                     </div>
                 </div>
+                <?php 
+                $sorguIlk = $db->query("select blog_id from blog order by blog_id asc limit 1");
+                $sonucIlk = $sorguIlk->fetch(PDO::FETCH_ASSOC);
+                $ilkId = $sonucIlk["blog_id"];
+                $sorguSon = $db->query("select blog_id from blog order by blog_id desc limit 1");
+                $sonucSon = $sorguSon->fetch(PDO::FETCH_ASSOC);
+                $sonId = $sonucSon["blog_id"];?>
                 <div class="navigation-area">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                            <div class="thumb">
-                                <a href="#"><img class="img-fluid" src="img/blog/prev.jpg" alt=""></a>
-                            </div>
                             <div class="arrow">
                                 <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
                             </div>
                             <div class="detials">
-                                <p>Prev Post</p>
-                                <a href="#"><h4>Space The Final Frontier</h4></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                            <div class="detials">
-                                <p>Next Post</p>
-                                <a href="#"><h4>Telescopes 101</h4></a>
-                            </div>
-                            <div class="arrow">
-                                <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
-                            </div>
-                            <div class="thumb">
-                                <a href="#"><img class="img-fluid" src="img/blog/next.jpg" alt=""></a>
-                            </div>										
-                        </div>									
-                    </div>
-                </div>
-                <div class="comments-area">
-                    <h4>Comments</h4>
-                    <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                            <div class="user justify-content-between d-flex">
-                                <div class="desc">
-                                    <h5><a href="#">Emilly Blunt</a></h5>
-                                    <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    <p class="comment">
-                                        Never say goodbye till the end comes!
-                                    </p>
+                                <?php if ($ilkId==$blogcek['blog_id']){
+                                    echo "";}
+                                    else {?>
+                                        <p>Geri</p>
+                                        <a href="single-blog.php?blog_id=<?php echo $blogcek['blog_id']-1; ?>"><h4><?php echo $oncekiblogcek['baslik'] ?></h4></a> 
+                                    <?php } ?>
                                 </div>
                             </div>
+                            <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                <div class="detials">  
+                                    <?php if ($sonId==$blogcek['blog_id']){
+                                        echo "";}
+                                        else {?>
+                                            <p>İleri</p>
+                                            <a href="single-blog.php?blog_id=<?php echo $blogcek['blog_id']+1; ?>"><h4><?php echo $sonrakiblogcek['baslik'] ?></h4></a> 
+                                        <?php }?>                            
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
+                                    </div>									
+                                </div>									
+                            </div>
                         </div>
-                    </div>	
-                    <hr>                                       				
+                         <!-- YORUM ALANI
+                        <div class="comments-area">
+                            <h4>Comments</h4>
+                            <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="desc">
+                                            <h5><a href="#">Emilly Blunt</a></h5>
+                                            <p class="date">December 4, 2017 at 3:12 pm </p>
+                                            <p class="comment">
+                                                Never say goodbye till the end comes!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	
+                            <hr>                                       				
+                        </div>
+                        <div class="comment-form">
+                            <h4>Leave a Reply</h4>
+                            <form>
+                                <div class="form-group form-inline">
+                                  <div class="form-group col-lg-6 col-md-6 name">
+                                    <input type="text" class="form-control" blog_id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 email">
+                                    <input type="email" class="form-control" blog_id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                                </div>										
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" blog_id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                            </div>
+                            <a href="#" class="primary-btn submit_btn">Post Comment</a>	
+                        </form>
+                    </div>
+                -->
                 </div>
-                <div class="comment-form">
-                    <h4>Leave a Reply</h4>
-                    <form>
-                        <div class="form-group form-inline">
-                          <div class="form-group col-lg-6 col-md-6 name">
-                            <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
-                        </div>
-                        <div class="form-group col-lg-6 col-md-6 email">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                        </div>										
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-                    </div>
-                    <a href="#" class="primary-btn submit_btn">Post Comment</a>	
-                </form>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="blog_right_sidebar">
-                <aside class="single_sidebar_widget search_widget">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Posts">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
-                        </span>
-                    </div><!-- /input-group -->
-                    <div class="br"></div>
-                </aside>
-                <aside class="single_sidebar_widget popular_post_widget">
-                    <h3 class="widget_title">Popular Posts</h3>
-                    <div class="media post_item">
-                        <img src="img/blog/popular-post/post1.jpg" alt="post">
-                        <div class="media-body">
-                            <a href="blog-details.html"><h3>Space The Final Frontier</h3></a>
-                            <p>02 Hours ago</p>
-                        </div>
-                    </div>
-                    <div class="media post_item">
-                        <img src="img/blog/popular-post/post2.jpg" alt="post">
-                        <div class="media-body">
-                            <a href="blog-details.html"><h3>The Amazing Hubble</h3></a>
-                            <p>02 Hours ago</p>
-                        </div>
-                    </div>
-                    <div class="media post_item">
-                        <img src="img/blog/popular-post/post3.jpg" alt="post">
-                        <div class="media-body">
-                            <a href="blog-details.html"><h3>Astronomy Or Astrology</h3></a>
-                            <p>03 Hours ago</p>
-                        </div>
-                    </div>
-                    <div class="media post_item">
-                        <img src="img/blog/popular-post/post4.jpg" alt="post">
-                        <div class="media-body">
-                            <a href="blog-details.html"><h3>Asteroids telescope</h3></a>
-                            <p>01 Hours ago</p>
-                        </div>
-                    </div>
-                    <div class="br"></div>
-                </aside>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Posts">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
+                                </span>
+                            </div><!-- /input-group -->
+                            <div class="br"></div>
+                        </aside>
+                        <aside class="single_sidebar_widget popular_post_widget">
+                            <h3 class="widget_title">Popular Posts</h3>
+                            <?php 
+
+                            $say=0;
+
+                            while($blogoncek=$blogonsor->fetch(PDO::FETCH_ASSOC)) { $say++?>
+                                <div class="media post_item">
+                                    <img src="img/blog/popular-post/post1.jpg" alt="post">
+                                    <div class="media-body">
+                                        <a href="blog-details.html"><h3><?php echo $blogoncek['baslik'] ?></h3></a>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                            <div class="br"></div>
+                        </aside>
                         <!-- REKLAM ALANI
                         <aside class="single_sidebar_widget ads_widget">
                             <a href="#"><img class="img-fluid" src="img/blog/add.jpg" alt=""></a>
                             <div class="br"></div>
                         </aside>-->
                         <aside class="single_sidebar_widget post_category_widget">
-                            <h4 class="widget_title">Post Catgories</h4>
+                            <h4 class="widget_title">Categories</h4>
                             <ul class="list cat-list">
-                                <li>
-                                    <a href="#" class="d-flex justify-content-between">
-                                        <p>Technology</p>
-                                    </a>
-                                </li>                                                           
+                                <?php 
+
+                                $say=0;
+
+                                while($kategoricek=$kategorisor->fetch(PDO::FETCH_ASSOC)) { $say++?>
+                                    <li>
+                                        <a href="kategori.php?kategori_id=<?php echo $kategoricek['kategori_id']?>" class="d-flex justify-content-between">
+                                            <p><?php echo $kategoricek['kategori_ad'] ?></p>
+                                        </a>
+                                    </li>   
+                                <?php } ?>
                             </ul>
                             <div class="br"></div>
                         </aside>
-                        <aside class="single-sidebar-widget newsletter_widget">
-                            <h4 class="widget_title">Newsletter</h4>
-                            <p>
-                                Don't you want to be the first to be informed about current blogs?
-                            </p>
-                            <div class="form-group d-flex flex-row">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <form action="nedmin/netting/islem-veri.php" method="POST">
+                            <aside class="single-sidebar-widget newsletter_widget" >
+                                <h4 class="widget_title">Newsletter</h4>
+                                <p>
+                                    Don't you want to be the first to be informed about current blogs?
+                                </p>
+                                <div class="form-group d-flex flex-row">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" blog_id="inlineFormInputGroup" name="mail_mail" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
                                     </div>
-                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
-                                </div>
-                                <a href="#" class="bbtns">Subcribe</a>
-                            </div>  
-                            <p class="text-bottom">You can unsubscribe at any time</p>  
-                            <div class="br"></div>                          
-                        </aside>
+                                    <button class="bbtns" type="submit" name="mailekle">Subcribe</button>
+                                </div>  
+                                <p class="text-bottom">You can unsubscribe at any time</p>  
+                                <div class="br"></div>                          
+                            </aside>
+                        </form>
                     </div>
                 </div>
             </div>

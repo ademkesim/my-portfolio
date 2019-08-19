@@ -1,3 +1,14 @@
+<?php 
+ob_start();
+session_start();
+date_default_timezone_set('Turkey');
+include 'nedmin/netting/islem.php';
+include 'nedmin/netting/islem-veri.php';
+
+
+
+
+ ?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -55,12 +55,7 @@ $mailsor->execute();
                    <td><center><a onclick="return confirm('Bu maili silmek istediğinize eminmisiniz?')" href="../netting/islem.php?mail_id=<?php echo $mailcek['mail_id']; ?>&mailsil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
                  </tr>
 
-
-
-               <?php  }
-
-               ?>
-
+               <?php  } ?>
 
              </tbody>
            </table>
